@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="shortcut icon" href="logo.ico"/>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> <!-- 제이쿼리 라이이브러리 연동 토글 가능한 버전-->
+	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script> <!-- 이펙트 효과 -->
+	<script type="text/javascript" src="js/swipe.js"></script> <!-- 터치 슬라이드 플러그인 연동 모바일에서 슬라이드되는것-->
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>  <!-- bxSlider 플러그인 연동 -->
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	
+	<div id="top_event">
+		<div class="event">
+			<div class="close_btn"><a href="#"><img src="img/close-button-white.png" alt=""/></a></div>
+		</div>
+	</div>
+	
+	<div id="wrap">
+		<div id="header">
+			<h1><a href="#"><img src="img/logo.jpg" style="margin-left:23px;" width="100" height="100" alt="sk2 로고" /></a></h1>
+			<p id="total_btn">
+				<a href="#"><img src="img/btn_all_menu.png" width="35" height="35" alt="토글" /></a>
+			</p>
+			<div id="total_menu">		
+				<div id="menu_wr">
+				<div class="close_btn1"></div>
+					<dl class="mwr1">
+						<dt class="mwr1_title">제품</dt>			
+							<dd class="menu_wr1">제품종류
+								<ul class="mw1u">
+									<li><a href="#">클렌저</a></li>
+									<li><a href="#">에센스</a></li>
+									<li><a href="#">스킨/토너</a></li>
+									<li><a href="#">크림/로션</a></li>
+									<li><a href="#">UV프로텍션</a></li>
+									<li><a href="#">마스크/집중케어</a></li>
+									<li><a href="#">메이크업</a></li>
+								</ul>
+							</dd>
+							<dd class="menu_wr2">제품라인
+								<ul class="mw2u">
+									<li><a href="#">피테라™ 에센셜</a></li>
+									<li><a href="#">마스터피스 피테라™</a></li>
+									<li><a href="#">안티 에이징</a></li>
+									<li><a href="#">화이트닝</a></li>
+									<li><a href="#">LXP – 럭셔리 피테라™</a></li>
+									<li><a href="#">SK-II MEN</a></li>
+									<li><a href="#">메이크업</a></li>
+								</ul>
+							</dd>
+							<dd class="menu_wr3">피부고민
+								<ul class="mw3u">
+									<li><a href="#">피부결</a></li>
+									<li><a href="#">탄력</a></li>
+									<li><a href="#">주름</a></li>
+									<li><a href="#">기미</a></li>
+									<li><a href="#">광채</a></li>
+								</ul>
+							</dd>
+							<dd class="menu_wr4">베스트셀러
+								<ul class="mw4u">
+									<li><a href="#">피테라 에센스</a></li>
+									<li><a href="#">스타터 키트</a></li>
+								</ul>
+							</dd>
+					</dl>
+					<dl class="mwr2">
+						<dt class="mwr2_title">브랜드<br/>스토리</dt>		
+							<dd class="menu_wr5">피테라™ 의 발견
+							<ul class="mw5u">
+								<li><a href="#">피테라™의 발견</a></li>
+								<li><a href="#">특별한 성분</a></li>
+								<li><a href="#">맑고 투명한 피부로의 경험</a></li>
+								<li><a href="#">매직링 피부진단</a></li>
+							</ul>
+							</dd>
+							<dd class="menu_wr6">아름다운 피부를 위한 과학
+							<ul class="mw6u">
+								<li><a href="#">아키타 여성 대상 연구</a></li>
+								<li><a href="#">아름다움을 위한 연구</a></li>
+							</ul>
+							</dd>
+							<dd class="menu_wr7">홍보대사
+							<ul class="mw7u">
+								<li><a href="#">아야세 하루카</a></li>
+								<li><a href="#">모모이 가오리</a></li>
+								<li><a href="#">탕웨이</a></li>
+								<li><a href="#">니니</a></li>
+							</ul>
+							</dd>
+							<dd class="menu_wr8">프로젝트
+							<ul class="mw8u">
+								<li><a href="#">#changedestiny</a></li>
+								<li><a href="#">#bareskinproject</a></li>
+							</ul>	
+							</dd>
+					</dl>
+					<dl class="mwr3">
+						<dt class="mwr3_title">새소식</dt>
+							<dd>In the spotlight</dd>
+							<dd>Expertise</dd>
+							<dd>Skin Solutions</dd>
+							<dd>Must-Haves</dd>	
+					</dl>
+					<dl class="mwr4">
+						<dt class="mwr4_title">상담</dt>
+							<dd>매직링 피부진단</dd>			
+					</dl><!-- 4개 -->
+				</div>		
+				
+			<dl id="util_menu">
+				<dd class="util_first">
+					<div class="uf1">
+						<span class="login1"><a href="#">로그인 &nbsp; &#124; &nbsp;</a></span>
+						<span><a href="#">회원가입</a></span>
+					</div>
+					<div class="login_wrap">
+					<ul>
+						<li class="login_wrap logtxt">	
+							<form action="#" id="login_f" method="post" name="log_f">
+								<fieldset>
+									<legend></legend>
+									<p class="user_id">
+										<input type="text" name="user_id" id="user_id" 
+										placeholder="아이디를 입력하세요"/>
+									</p>
+									<p class="user_pw">		
+										<input type="text" name="user_pw" id="user_pw" 
+										placeholder="비밀번호를 입력하세요"/>
+									</p>
+									<p class="idp">
+										<input type="checkbox" name="save_id" id="save_id" />
+										<a href="#">아이디 저장</a>
+										<input type="checkbox" name="save_id" id="save_id" />
+										<a href="#">비밀번호 저장</a>
+									</p>
+									<p class="log_btn">
+										<input type="image" src="img/login_btn.png" alt="login" />
+									</p>
+									<p class="join_btn_wrap">
+										<a href="#" class="sch_id_btn">아이디 &nbsp; &#124; &nbsp; 비밀번호찾기</a>
+									</p>
+									<p class="login_close_btn"><a href="#"><img src="img/close-button-white.png" alt="닫기버튼" /></a></p>
+								</fieldset>
+							</form>
+						</li>
+					</ul>
+					<div>
+				</dd>
+			</dl>	
+		</div> <!-- id="header" -->
+	</div> <!-- id="wrap" -->
+		
+	<div id="wrap1">
+		<div id="brandVisual">
+			<ul>
+				<li class="visual_0"><a href="#">배너이미지1</a></li>
+				<li class="visual_1"><a href="#">배너이미지2</a></li>
+				<li class="visual_2"><a href="#">배너이미지3</a></li>
+			</ul>
+		</div>
+		<div class="btnImg">
+			<img src="img/slide-left-button.png" class="prev" width="50" height="50" alt=""/>
+			<img src="img/slide-right-button.png" class="next" width="50" height="50" alt=""/>
+		</div>
+		<ul id="buttonList">
+			<li class="on"><a href="#">배너1</a></li>
+			<li><a href="#">배너2</a></li>
+			<li><a href="#">배너3</a></li>
+		</ul>
+	</div>
+		
+	<div id="main_zone">
+		<h3>MAIN PRODUCTS</h3>
+		<div class="main_bg">
+			<ul>
+				<li><span class="container"><img src="img/a1.png" width="380" height="350" alt=""><a href="#">PITERA ESSENCE</a></img></span></li>
+				<li><span class="container"><img src="img/a2.png" width="380" height="350" alt=""><a href="#">AIRY CREAM</a></img></span></li>
+				<li><span class="container"><img src="img/a3.png" width="380" height="350" alt=""><a href="#">STARTER KIT</a></img></span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="bestgoods_zone">
+		<h3>BEST PRODUCTS</h3>
+		<div id="best_bg">
+			<ul>
+				<li><img src="img/b3.jpg" width="200" height="200" alt=""/><span class="txt_box">Facial Treatment <br/> Essence</span></li> 
+				<li><img src="img/b2.jpg" width="200" height="200" alt=""/><span class="txt_box">Genoptics <br/> Essence</span></li> 
+				<li><img src="img/b5.jpg" width="200" height="200" alt=""/><span class="txt_box">Limited <br/> Edition</span></li> 
+				<li><img src="img/b1.jpg" width="200" height="200" alt=""/><span class="txt_box">Facial Treatment <br/> Gentle Cleanser</span></li>
+			</ul><!-- 총 4개 -->
+			<p class="prev_btn"><a href="#"><img src="img/slide-sub-left-button-black.png" alt="이전으로 이동" /></a></p>
+			<p class="next_btn"><a href="#"><img src="img/slide-sub-right-button-black.png" alt="다음으로 이동" /></a></p>
+		</div>
+	</div>
+	
+	<!-- <div class="tpic" style="background:#000;">
+		<img src="img/banner.jpg" width="1280" height="420" alt="" style="margin-left:500px;"/>
+	</div> -->
+	
+	<div id="middle_a">
+		<dl class="accordion">
+			<dt class="ac1">In the Spotlight
+				<!-- <div class="hamburger" id="hamburger-1">
+				  <span class="line"></span>
+				  <span class="line"></span>
+				  <span class="line"></span>
+				</div> -->
+			</dt>
+			<dd class="ad1"></dd>
+			<dt class="ac2">Expertise</dt>
+			<dd class="ad1"></dd>
+			<dt class="ac3">Skin Solutions</dt>
+			<dd class="ad1"></dd>
+			<dt class="ac4">Must-Haves</dt>
+			<dd class="ad1"></dd>
+		</dl>
+	</div>
+		
+	<div class="tpic" style="background:#000;">
+		<img src="img/pbanner.jpg" width="980" height="551" style="margin-left:450px;" alt=""/>
+	
+		<!-- <img src="img/banner.jpg" width="1280" height="420" alt="" style="margin-left:500px;"/> -->
+	</div>
+	
+	
+	
+	<div id="footer">
+		<span class="f_logo"></span>
+		<p>한국피앤지판매유한회사 &nbsp; &#124; &nbsp;대표: 발라카 니야지 <br/>
+		주소:서울시 강남구 테헤란로 203, 16층 &nbsp; &#124; &nbsp;
+		사업자 등록번호:220-86-09268 <br/>
+		소비자 상담실:080-023-3333 <br/>
+		</p>
+		<form id="footer_s">
+			<select name="국가 및 지역 선택">
+				<option>한국</option>
+				<option>Australia</option>
+				<option>中国内地</option>
+				<option> 香港特別行政區 </option>
+				<option>日本</option>
+				<option>Malaysia</option>
+				<option>Singapore</option>
+				<option>台灣地區</option>
+				<option>ไทย</option>
+				<option>United Kingdom</option>
+				<option>United States</option>
+			</select>
+		</form>
+		<p>©2019. Procter & Gamble. All Rights Reserved.</p>
+	</div>
+
+	
+</body>
+</html>

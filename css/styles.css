@@ -1,0 +1,186 @@
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: pointer;}
+li{list-style: none;}
+a{text-decoration: none; color: #333;}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+#wrap { width: 100%; height: 100%; display: flex; }
+#sidebar { width: 250px;  text-align: center;  border-right: 0.5px solid black; }
+#main { flex:1;  height: 100%;  } 
+
+#sidebar .nav ul li { height: 80px; padding: 30px; border-bottom: 0.5px solid black; }
+#sidebar .nav ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.header h1 { height: 160px; border-bottom: 0.5px solid black; padding: 50px;}
+.subtitle { height: 80px; border-bottom: 0.5px solid black; font-size: 13px;  letter-spacing: 0.05em; padding: 7px;}
+.nav a{font-size: 13px;}
+
+#contact h3{font-size: 14px; margin-top: 135px; }
+#contact ul li {margin: 5px;}
+.contact{ height: 240px; width: 100%; 
+    border-bottom: 0.5px solid black;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */}
+
+.contact a {font-size: 13px;}
+
+.data-content{display: flex; }
+.data-nav{ width: 250px; text-align: center; height: calc(100vh - 240px); }
+.data-nav ul li{ height: 80px; padding: 30px; border-bottom: 0.5px solid black;  }
+.data-nav ul li:hover {
+    background-color: #f0f0f0;
+}
+.data-cont{flex:1;  border-left: 0.5px solid black;  } 
+.data-nav a {font-size: 13px;}
+figcaption {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+figure {
+    margin: 20px; /* 각 figure 요소에 간격 추가 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+#dcont1>h3 {
+    padding: 30px;
+}
+#dcont1>p {
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+/* javascript*/
+.section { display: none; }
+.section.active { display: block; }
+.dcont { display: none; }
+.dcont.active { display: block; }
+.wcont { display: none; }
+.wcont.active { display: block; }
+
+.web-content{display: flex;}
+.web-nav{width: 250px; text-align: center; height: calc(100vh - 240px);}
+.web-nav ul li{ height: 80px; padding: 30px; border-bottom: 0.5px solid black;  }
+.web-nav ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.web-cont{flex:1;  border-left: 0.5px solid black;  } 
+.web-nav a {font-size: 13px;}
+
+/* image */
+.frame {
+    width: 850px;
+    height: 500px;
+    border: 0.5px solid #333;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* 프레임 바깥 이미지가 안 보이도록 설정 */
+    background-color: #fff;
+    margin: 80px auto;
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    gap: 10px; /* 이미지 간격 설정 */
+    height: 100%;
+    transition: transform 0.3s ease-in-out; /* 슬라이드 애니메이션 추가 */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer; /* 이미지에 커서 추가 */
+  }
+  
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slide-btn.left {
+    left: 0;
+  }
+  
+  .slide-btn.right {
+    right: 0;
+  }
+  
+  .modal {
+    display: none; /* 숨겨진 상태 */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* web */
+
+
+.wcont img {
+    max-width: 100%;
+    max-height: 80%; /* 이미지 높이를 조정하여 버튼 공간 확보 */
+    display: block;
+    margin: 80px auto 0; /* 이미지 밑의 여백을 제거 */
+    width: 800px;
+    height: 400px;
+   
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    height: 80px;
+    border-bottom: 0.5px solid black;
+    width: 800px;
+    font-size: 13px;
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
