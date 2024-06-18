@@ -87,7 +87,7 @@ z-index:1;}
 
 /* search_box1 */
 
-.search_wrap{width:100%; position: absolute; top:500px; left:100px;}
+.search_wrap{width:100%; position: absolute; top:500px; left:30px;}
 .icon1{background:url(../images/icon2.png) no-repeat;
 		width:21px; height:21px; float:left; margin-top:28px; margin-left:20px;}
 .search_box1{width:20%; height:78px; background:#fff;
